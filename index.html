@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,30 @@
     <link rel="stylesheet" href="estilo/base.css">
     <title>Meu Portifólio</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark portfolio-navbar" aria-label="Navegação principal">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="index.html">Diosnei</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav ms-auto gap-lg-2">
-              <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">Início</a></li>
-              <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
-              <li class="nav-item"><a class="nav-link" href="blog.html">Projetos</a></li>
-              <li class="nav-item"><a class="nav-link" href="portifolio.html">Portfólio</a></li>
-              <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-              <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-            </ul>
-            <button class="btn btn-outline-light theme-togle" type="button" aria-label="Alternar tema" data-theme-toggle>
-                <span data-theme-icon aria-hidden="true">🌜</span>
-                <span data-theme-text>Tema</span>
+            <a class="navbar-brand fw-bold" href="index.html">Diosnei.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portifolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <button class="btn btn-outline-light theme-togle" type="button" aria-label="Alternar tema"
+                    data-theme-toggle>
+                    <span data-theme-icon aria-hidden="true">🌜</span>
+                    <span data-theme-text>Tema</span>
+                </button>
+            </div>
         </div>
     </nav>
     <header class="hero-section">
@@ -35,7 +39,8 @@
             <section class="hero-copy" aria-label="Titulo-Principal">
                 <p class="eyebrow">Portfólio Pessoal</p>
                 <h1 id="Titulo-Principal">Desenvolvedor em Formação criando interfaces modernas</h1>
-                <p class="hero-text">Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meu trabalho e experiências.</p>
+                <p class="hero-text">Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meu trabalho e
+                    experiências.</p>
                 <div class="hero-actions">
                     <a class="btn btn-primary btn-lg" href="blog.html">Meus Projetos</a>
                     <a class="btn btn-outline-secondary btn-lg" href="contato.html">Entre em Contato</a>
@@ -44,7 +49,8 @@
             <aside class="profile-card" arial-label="Resumo do Perfil">
                 <img class="profile-avatar" src="img/avatar-opcao-3.png" alt="Avatar de Perfil">
                 <h2>Diosnei Alexsandro Sotelo</h2>
-                <p>Estudante de tecnologia, interessado em desenvolvimento web, organização de projetos e experiências digitais.</p>
+                <p>Estudante de tecnologia, interessado em desenvolvimento web, organização de projetos e experiências
+                    digitais.</p>
                 <ul>
                     <li>HTML semântico</li>
                     <li>CSS mobile first</li>
@@ -98,6 +104,11 @@
                 <a href="contato.html">Contato</a>
             </nav>
         </div>
-    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS do Bootstrap:para o menu mobile abrir e fechar. -->
+    <script src="scripts/theme.js"></script>
+    <!-- JS próprio do tema: ira controlar a troca entre tema claro e escuro. -->
 </body>
+
 </html>
