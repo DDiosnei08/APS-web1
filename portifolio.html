@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/base.css">
+    <title>Detalhes do Projeto</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark portfolio-navbar" aria-label="Navegação principal">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Diosnei.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="portifolio.html">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <button class="btn btn-outline-light theme-togle" type="button" aria-label="Alternar tema"
+                    data-theme-toggle>
+                    <span data-theme-icon aria-hidden="true">🌜</span>
+                    <span data-theme-text>Tema</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="container">
+            <p class="eyebrow">Detalhes do Projeto</p>
+            <h1>Como o portfólio APS foi planejado e desenvolvido.</h1>
+        </div>
+    </header>
+    <main>
+        <section class="setion-block" aria-labelledby="objetivo-title">
+            <div class="container content-grid">
+                <article>
+                    <h2 id="objetivo-title">Objetivo do Projeto</h2>
+                    <p>O objetivo deste projeto foi criar um portfólio pessoal para apresentar minhas habilidades,
+                        experiências e projetos de forma clara e profissional. O portfólio foi planejado para ser
+                        responsivo, acessível e fácil de navegar, utilizando as melhores práticas de desenvolvimento
+                        web.</p>
+                </article>
+                <aside class="note-box">
+                    <h3>Tecnologias Utilizadas</h3>
+                    <ul>
+                        <li>HTML5 semântico</li>
+                        <li>CSS3 com Sass</li>
+                        <li>Bootstrap 5 para layout e componentes</li>
+                        <li>JavaScript para interatividade</li>
+                        <li>Git para controle de versão</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        <section class="section-block muted" aria-labelledby="aprendizados-title">
+            <div class="container">
+                <h2 id="aprendizados-title">Aprendizados e Desafios</h2>
+                <div class="requirements-grid">
+                    <article class="info-card">
+                        <h3>Responsividade</h3>
+                        <p>Aprendi a importância de começar o design pelo mobile para garantir uma experiência fluida em
+                            todas as telas.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Organização de Código</h3>
+                        <p>Descobri que separar HTML, CSS, JavaScript e imagens em pastas distintas facilita a
+                            manutenção e escalabilidade do projeto.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Acessibilidade</h3>
+                        <p>Entendi como usar atributos ARIA e práticas semânticas para tornar o site mais acessível a
+                            todos os usuários.</p>
+                    </article>
+                </div>
+            </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Diosnei.dev</strong>
+                <p>Portfólio pessoal criado como referência para a APS de Desenvolvimento Web I.</p>
+            </div>
+            <nav aria-label="Links rápidos do rodapé">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="blog.html">Projetos</a>
+                <a href="portifolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS do Bootstrap:para o menu mobile abrir e fechar. -->
+    <script src="scripts/theme.js"></script>
+    <!-- JS próprio do tema: ira controlar a troca entre tema claro e escuro. -->
+</body>
+
+</html>
