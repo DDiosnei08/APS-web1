@@ -3,20 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site com Bootstrap</title>
-
-    <!-- 1. LINK DO CSS (Cole sempre dentro do <head>) -->
-    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stile.css">
+    <title>Diosnei.Dev</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Diosnei.Dev</a>
+            <div class="ms-auto">
+                <ul class="navbar-nav flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link" href="portifolio.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack">Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- O conteúdo do seu site entra aqui -->
-    <div class="container text-center mt-5">
-        <h1>Meu Site Funciona!</h1>
-        <button class="btn btn-success">Botão do Bootstrap</button>
-    </div>
+    <main>
+        <section class="container my-5 py-5">
+            <div class="row align-items-center gy-4">
+                <div class="col-md-7">
+                    <span class="badge bg-secondary mb-3 text-uppercase">Disponivel para contratos</span>
+                    <h1 class="display-4 fw-bold mb-3">Engenharia de software com precisao e desempenho.</h1>
+                    <p class="text-secondary col-lg-10 mb-4">
+                        Desenvolvedor finalizando o curso de Tecnologia em Analise e Desenvolvimento de Sistemas (TADS). Focado em criar solucoes eficientes atraves de estruturas de dados solidas e codigo limpo.
+                    </p>
+                    <div class="d-flex gap-3 hero-actions">
+                        <a href="portifolio.html" class="btn btn-purple px-4 py-2">Ver portfolio</a>
+                        <a href="curriculo.html" class="btn btn-outline-light px-4 py-2">Ver curriculo</a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="card-custom p-4 text-start shadow-sm mx-auto profile-card">
+                        <img src="img/avatar-opcao-3.png" alt="Foto de perfil de Diosnei Alexsandro Sotelo" class="img-fluid rounded mb-3">
+                        <h2 class="h5 mb-1">Diosnei Alexsandro Sotelo</h2>
+                        <p class="text-secondary small mb-2">Desenvolvedor Junior</p>
+                        <span class="badge bg-success-subtle text-success">Online</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- 2. LINK DO JAVASCRIPT (Cole sempre no final, antes de fechar o </body>) -->
-    <script src="https://jsdelivr.net"></script>
+        <section id="stack" class="container my-5 py-5">
+            <div class="mb-4">
+                <h2 class="fw-bold">Stack & Especialidades</h2>
+                <p class="text-secondary">Uma selecao das minhas principais habilidades tecnicas e ferramentas de trabalho.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="card-custom p-4 h-100">
+                        <div class="text-purple mb-3 fw-bold">HTML/CSS</div>
+                        <h3 class="h4">Linguagens e Tecnologias</h3>
+                        <p class="text-secondary small">Desenvolvimento de sistemas robustos e aplicacoes modernas utilizando ferramentas consolidadas.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-dark border border-secondary">C#</span>
+                            <span class="badge bg-dark border border-secondary">C</span>
+                            <span class="badge bg-dark border border-secondary">HTML5</span>
+                            <span class="badge bg-dark border border-secondary">CSS3</span>
+                            <span class="badge bg-dark border border-secondary">Bootstrap</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="card-custom p-4 h-100">
+                        <div class="text-purple mb-3 fw-bold">TADS</div>
+                        <h3 class="h4">Conhecimentos & Bagagem</h3>
+                        <p class="text-secondary small">Experiencia academica e pratica adquirida ao longo do curso de TADS.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-dark border border-secondary">Banco de Dados</span>
+                            <span class="badge bg-dark border border-secondary">Estrutura de Dados</span>
+                            <span class="badge bg-dark border border-secondary">Softwares Desktop</span>
+                            <span class="badge bg-dark border border-secondary">Aplicacoes Mobile</span>
+                            <span class="badge bg-dark border border-secondary">Criacao de Sites</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-5 text-center">
+            <div class="py-4 card-custom col-lg-8 mx-auto cta-card">
+                <h2 class="fw-bold mb-3">Vamos construir o futuro juntos?</h2>
+                <p class="text-secondary px-3 mb-4">Estou disponivel para novos projetos e oportunidades. Vamos conversar sobre a sua ideia e transforma-la em realidade tecnologica.</p>
+                <div class="d-flex justify-content-center gap-3 hero-actions">
+                    <a href="contato.html" class="btn btn-light px-4 py-2">Iniciar conversa</a>
+                    <a href="contato.html" class="btn btn-outline-light px-4 py-2">Enviar proposta</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container py-4 mt-5 d-flex flex-column flex-sm-row justify-content-between text-secondary small">
+        <p class="mb-2 mb-sm-0">&copy; 2026 Diosnei.Dev. Desenvolvido com precisao.</p>
+        <div class="d-flex gap-3">
+            <a href="#" class="text-secondary text-decoration-none">GitHub</a>
+            <a href="#" class="text-secondary text-decoration-none">LinkedIn</a>
+            <a href="#" class="text-secondary text-decoration-none">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
