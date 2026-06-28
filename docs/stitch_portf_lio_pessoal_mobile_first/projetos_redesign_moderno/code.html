@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projetos | DevCraft</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Geist:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "text-main": "#FFFFFF",
+                    "border-subtle": "rgba(184, 172, 150, 0.15)",
+                    "text-muted": "#B8AC96",
+                    "surface-tint": "#d2bbff",
+                    "on-primary": "#3f008e",
+                    "inverse-surface": "#e7deff",
+                    "surface-container-highest": "#372f58",
+                    "on-secondary-container": "#c0b49d",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "tertiary": "#ffb784",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary": "#4f2500",
+                    "outline-variant": "#4a4455",
+                    "inverse-on-surface": "#322a53",
+                    "surface-light": "#F8F9FA",
+                    "secondary-fixed-dim": "#d2c5ae",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#efe1c9",
+                    "surface-dim": "#150c34",
+                    "on-surface-variant": "#ccc3d8",
+                    "primary-container": "#7c3aed",
+                    "on-secondary": "#37301f",
+                    "primary-fixed": "#eaddff",
+                    "outline": "#958da1",
+                    "tertiary-fixed-dim": "#ffb784",
+                    "on-error": "#690005",
+                    "on-secondary-fixed": "#211b0c",
+                    "tertiary-fixed": "#ffdcc6",
+                    "tertiary-container": "#a15100",
+                    "surface-container-lowest": "#0f062f",
+                    "on-background": "#e7deff",
+                    "secondary-container": "#4e4634",
+                    "surface": "#150c34",
+                    "surface-container": "#211941",
+                    "primary-fixed-dim": "#d2bbff",
+                    "background": "#150c34",
+                    "on-tertiary-fixed": "#301400",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#4e4634",
+                    "surface-container-high": "#2c244c",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#3b335d",
+                    "surface-dark": "#1a1629",
+                    "inverse-primary": "#732ee4",
+                    "primary": "#d2bbff",
+                    "surface-variant": "#372f58",
+                    "surface-container-low": "#1d153d",
+                    "secondary": "#d2c5ae",
+                    "on-tertiary-container": "#ffe0cd",
+                    "on-surface": "#e7deff",
+                    "on-primary-container": "#ede0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["JetBrains Mono"],
+                    "headline-lg": ["Geist"],
+                    "body-lg": ["Geist"],
+                    "headline-md": ["Geist"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-xl-mobile": ["Geist"],
+                    "headline-xl": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #150c34;
+            color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(33, 25, 65, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(184, 172, 150, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(184, 172, 150, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(124, 58, 237, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-border-subtle shadow-sm">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-16">
+<div class="text-headline-md font-headline-md font-bold text-text-main">DevCraft</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Experience</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Projects</a>
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Stack</a>
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="active:scale-95 transition-transform hover:opacity-80 p-2">
+<span class="material-symbols-outlined text-text-main" data-icon="dark_mode">dark_mode</span>
+</button>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-text-main" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-stack-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Header Section -->
+<header class="mb-stack-lg text-center md:text-left">
+<h1 class="font-headline-xl text-headline-xl mb-stack-sm tracking-tight">Projetos &amp; Experimentos</h1>
+<p class="text-text-muted font-body-lg text-body-lg max-w-2xl">
+                Uma seleção curada de engenharia de software, explorando novas tecnologias e resolvendo problemas complexos com elegância.
+            </p>
+</header>
+<!-- Projects Bento/Grid Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Featured Project (Bento Large) -->
+<div class="glass-card md:col-span-8 rounded-xl overflow-hidden group">
+<div class="relative h-64 md:h-96 w-full">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated dark-themed software dashboard UI with intricate data visualizations, glowing purple neon accents, and minimalist typography. The interface is displayed on a high-end sleek monitor in a moody, dimly lit workspace that emphasizes technical precision and modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB45x1gnPWvW4UQR04DyrY5wVHcYkD4sv0adnACuGGFv718KF-MplY0ihdDPhUQPTFj6SK0n_IK-G-WkqcohZ7B-IAkVPDCbCD2RyDdTgjSjpiSviYsjFoRjB5oGCeA7Cw040Bzo0oPuZtz-8HFq2U2mn5K9j5sAuS_epK8oe7eIu_u450y41-3Kc-I40_1X6NUeB_aDNKWEt6-uq1cznAMsE2GGtIBrAxVpcNNl0T393oeSuuRAJzTVSYLUOIlu8dLyd1nfoGuMBfJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-stack-md">
+<div class="flex gap-stack-sm mb-stack-sm">
+<span class="bg-primary-container/20 text-primary font-label-sm text-label-sm px-3 py-1 rounded-full border border-primary/30">Next.js</span>
+<span class="bg-primary-container/20 text-primary font-label-sm text-label-sm px-3 py-1 rounded-full border border-primary/30">TypeScript</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-text-main">Nova: Sistema de Design Evolutivo</h2>
+</div>
+</div>
+<div class="p-stack-md">
+<p class="text-text-muted mb-stack-md line-clamp-2">Uma infraestrutura escalável para componentes React focada em acessibilidade e performance extrema, utilizada por mais de 500 desenvolvedores internos.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md hover:underline" href="#">
+                        Ver Detalhes <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Side Card 1 -->
+<div class="glass-card md:col-span-4 rounded-xl flex flex-col group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="Close-up macro photography of high-performance circuit boards with purple ambient light glowing from within the components. The scene is shot with a shallow depth of field, capturing the technical complexity and precision of modern hardware engineering within the DevCraft color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7OEYaVYOf2oGuOmDbXhMjuvEYOmmyDYw2VtUWkOuULJiQFjwjlodnfoR4gxj1UF2wX8DbeuTwvCyGdVIpyZeqzdvQyDLmDJ4r3UEQgXO-46gANJdSHidejJGEwjHqPTIMA1upajCDDKr8JoKndc1dfSmF1-du5MekQhbxbxewCMvwtkwf8WA6lOcO4SzLo9p1DmkvELpL_Xsc55A8lkc_iRe3YIi-h6a_rf2y-07Wg2GA21K5a-zYCnl9RodluJC4lRFqsRRBl8PE"/>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex gap-stack-sm mb-stack-sm flex-wrap">
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">Rust</span>
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">WebAssembly</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-main mb-stack-sm">Fast-Diff Engine</h3>
+<p class="text-text-muted text-sm mb-auto">Motor de comparação binária ultra-rápido otimizado para navegadores modernos via WASM.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="text-xs font-label-sm text-border-subtle italic">2024 Project</span>
+<span class="material-symbols-outlined text-text-muted" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+</div>
+<!-- Project Row 2 -->
+<div class="glass-card md:col-span-4 rounded-xl flex flex-col group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist architectural structure featuring clean lines and concrete textures, illuminated by soft golden hour light and deep purple shadows. The composition is geometric and balanced, reflecting the precision of software architecture and professional craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQVZsmgZoRyW67Qq12thwf4NIeekYiDjleipu10aV1nQkN_88SAsYaHDPV9_ueYv-yh4ULntArxRQMwEv1Ca6tyQ9Sf5z9-S10wK5_f3pmxR7kDI1hALxjkWYzJT1MZQXhesffPgLC_HeRuXO4VQtawoq89vEC_HL6zPHece50bvoNNOvEJRS08iDvwXgavW9pS65ARFmg9P9y1WaBaF6q4IGr-sPdntpcweK4Rouz0HnNjoQwANThKK_9aMN5j1ke1ui0K_iZbnsi"/>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex gap-stack-sm mb-stack-sm flex-wrap">
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">GraphQL</span>
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">Node.js</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-main mb-stack-sm">API Gateway V2</h3>
+<p class="text-text-muted text-sm mb-auto">Camada de orquestração distribuída processando mais de 1 milhão de requisições por minuto com latência &lt;10ms.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="text-xs font-label-sm text-border-subtle italic">Open Source</span>
+<span class="material-symbols-outlined text-text-muted" data-icon="terminal">terminal</span>
+</div>
+</div>
+</div>
+<div class="glass-card md:col-span-4 rounded-xl flex flex-col group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="An abstract visualization of a neural network with nodes connected by glowing violet fiber optic lines against a dark background. The lighting is ethereal and tech-focused, representing artificial intelligence and advanced data processing in a clean, editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7gFAdjTB6wOJUq3oJc1ZazqLl-gjAN1A3PvRT9ARnga-_D8UvFI629nWDs6h_nh5LljXo1QQ_mVVDzQ9l38tpL_Wx28h5jMhsQwRfJniOxJSYhfLqP6BRhG7tVWSxI8j_yOVE1TaX9RHra9mvQ85rJRme2Wb4OCCl8OLY9cS7FLvWLGgofa26CGiZm7opK-_7BmGEELbJoOoY-9yAlxRKvhcGF46O5EwT649HeqcWq_MIFNjknKcvmApzVsOyeLVvYuCUO_CIDHTl"/>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex gap-stack-sm mb-stack-sm flex-wrap">
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">Python</span>
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">PyTorch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-main mb-stack-sm">Semantic Search AI</h3>
+<p class="text-text-muted text-sm mb-auto">Modelo customizado de embeddings para busca semântica em documentações técnicas complexas.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="text-xs font-label-sm text-border-subtle italic">AI Lab</span>
+<span class="material-symbols-outlined text-text-muted" data-icon="psychology">psychology</span>
+</div>
+</div>
+</div>
+<div class="glass-card md:col-span-4 rounded-xl flex flex-col group">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="A clean, top-down shot of a developer workstation featuring a high-end mechanical keyboard, a minimalist mouse, and a code editor open on a screen showing elegant TypeScript syntax. The desk is dark wood with subtle purple light reflections from an unseen source." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbxwThAiY5Mqcsc0fFFfdKMpg_EJFZ3PszULrLLQw_1muj9HIfZTt4zxxE74F7bHUjDwSpJclffUPyfoLD7okn24y3gjefsx-SDR_OmCSq_EWzL3cZyT-x2RbCemt9D8rWEpRHdu8d48hAmY0IN5LheppAyDUCy8hc4kp9VPZQhFXCeYRnqF9K2RQ8U05WrOW0_cp1FRUbb1npmH9DEzm7PcPi7aDGW6rE2hk5wxoZG5-Wifv5hHSnENga6F0VVfuQt6xFyEXd-mrN"/>
+</div>
+<div class="p-stack-md flex-1 flex flex-col">
+<div class="flex gap-stack-sm mb-stack-sm flex-wrap">
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">Vue.js</span>
+<span class="bg-surface-container-highest text-text-muted font-label-sm text-label-sm px-2 py-0.5 rounded-md">Tailwind</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-main mb-stack-sm">Portfolio Engine</h3>
+<p class="text-text-muted text-sm mb-auto">O motor que gera este site, utilizando renderização estática e temas dinâmicos via design tokens.</p>
+<div class="mt-stack-md flex justify-between items-center">
+<span class="text-xs font-label-sm text-border-subtle italic">Internal</span>
+<span class="material-symbols-outlined text-text-muted" data-icon="web">web</span>
+</div>
+</div>
+</div>
+<!-- Code Snippet Section (Full Width) -->
+<div class="glass-card md:col-span-12 rounded-xl p-stack-lg border-l-4 border-l-primary">
+<div class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-text-main mb-stack-sm">Filosofia de Código</h3>
+<p class="text-text-muted font-body-md mb-stack-md">"O código é uma forma de literatura. Ele deve ser escrito para que humanos o entendam e, incidentalmente, para que máquinas o executem."</p>
+<div class="flex gap-stack-md">
+<button class="bg-primary text-on-primary font-label-md px-6 py-2 rounded-lg hover:opacity-90 active:scale-95 transition-all">Download Resume</button>
+<button class="border border-border-subtle text-text-main font-label-md px-6 py-2 rounded-lg hover:bg-surface-container-highest transition-all">GitHub Repo</button>
+</div>
+</div>
+<div class="w-full md:w-1/3 bg-surface-dark rounded-xl border border-border-subtle p-stack-md relative font-label-sm text-label-sm overflow-hidden">
+<div class="flex gap-1.5 mb-4">
+<div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+</div>
+<pre class="text-primary-fixed leading-relaxed"><code><span class="text-tertiary">function</span> <span class="text-primary">solveProblem</span>(input) {
+  <span class="text-text-muted">// Iterate with precision</span>
+  <span class="text-tertiary">return</span> input
+    .filter(i =&gt; i.isClean)
+    .map(i =&gt; <span class="text-secondary">refactor</span>(i));
+}</code></pre>
+<button class="absolute top-4 right-4 text-text-muted hover:text-text-main">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-stack-lg border-t border-border-subtle bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start gap-stack-sm">
+<div class="text-headline-sm font-headline-sm font-bold text-text-main">DevCraft</div>
+<p class="font-body-md text-body-md text-text-muted">© 2024 DevCraft. Engineered with precision.</p>
+</div>
+<div class="flex gap-stack-lg">
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">Resume</a>
+</div>
+</div>
+</footer>
+<!-- Interactive Layer: Mouse Glow Tracking -->
+<div class="pointer-events-none fixed inset-0 z-10 opacity-40 transition-opacity duration-300" id="glow-overlay" style="background: radial-gradient(circle at 0% 0%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);"></div>
+<script>
+        // Micro-interaction: Mouse tracking glow
+        const glowOverlay = document.getElementById('glow-overlay');
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            glowOverlay.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(124, 58, 237, 0.15) 0%, transparent 40%)`;
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10',</script></body></html>

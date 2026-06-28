@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sobre Mim | DevCraft</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Geist:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "text-main": "#FFFFFF",
+                    "border-subtle": "rgba(184, 172, 150, 0.15)",
+                    "text-muted": "#B8AC96",
+                    "surface-tint": "#d2bbff",
+                    "on-primary": "#3f008e",
+                    "inverse-surface": "#e7deff",
+                    "surface-container-highest": "#372f58",
+                    "on-secondary-container": "#c0b49d",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "tertiary": "#ffb784",
+                    "on-tertiary-fixed-variant": "#713700",
+                    "on-primary-fixed": "#25005a",
+                    "on-tertiary": "#4f2500",
+                    "outline-variant": "#4a4455",
+                    "inverse-on-surface": "#322a53",
+                    "surface-light": "#F8F9FA",
+                    "secondary-fixed-dim": "#d2c5ae",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#efe1c9",
+                    "surface-dim": "#150c34",
+                    "on-surface-variant": "#ccc3d8",
+                    "primary-container": "#7c3aed",
+                    "on-secondary": "#37301f",
+                    "primary-fixed": "#eaddff",
+                    "outline": "#958da1",
+                    "tertiary-fixed-dim": "#ffb784",
+                    "on-error": "#690005",
+                    "on-secondary-fixed": "#211b0c",
+                    "tertiary-fixed": "#ffdcc6",
+                    "tertiary-container": "#a15100",
+                    "surface-container-lowest": "#0f062f",
+                    "on-background": "#e7deff",
+                    "secondary-container": "#4e4634",
+                    "surface": "#150c34",
+                    "surface-container": "#211941",
+                    "primary-fixed-dim": "#d2bbff",
+                    "background": "#150c34",
+                    "on-tertiary-fixed": "#301400",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#4e4634",
+                    "surface-container-high": "#2c244c",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#3b335d",
+                    "surface-dark": "#1a1629",
+                    "inverse-primary": "#732ee4",
+                    "primary": "#d2bbff",
+                    "surface-variant": "#372f58",
+                    "surface-container-low": "#1d153d",
+                    "secondary": "#d2c5ae",
+                    "on-tertiary-container": "#ffe0cd",
+                    "on-surface": "#e7deff",
+                    "on-primary-container": "#ede0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "label-md": ["JetBrains Mono"],
+                    "headline-lg": ["Geist"],
+                    "body-lg": ["Geist"],
+                    "headline-md": ["Geist"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-xl-mobile": ["Geist"],
+                    "headline-xl": ["Geist"],
+                    "body-md": ["Geist"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #150c34;
+            color: #e7deff;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(33, 25, 65, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(184, 172, 150, 0.15);
+        }
+        .skill-badge {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: #d2bbff;
+            transform: translateY(-2px);
+        }
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, rgba(21, 12, 52, 0) 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary/30 selection:text-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-border-subtle shadow-sm">
+<nav class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-16">
+<div class="text-headline-md font-headline-md font-bold text-text-main">
+                DevCraft
+            </div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Experience</a>
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Stack</a>
+<a class="font-label-md text-label-md text-text-muted hover:text-text-main transition-colors" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="material-symbols-outlined text-text-muted hover:opacity-80 transition-all active:scale-95">dark_mode</button>
+<button class="md:hidden material-symbols-outlined text-text-main">menu</button>
+</div>
+</nav>
+</header>
+<main class="relative pt-32 pb-stack-lg overflow-hidden">
+<!-- Background Decorations -->
+<div class="hero-glow top-0 -right-24"></div>
+<div class="hero-glow bottom-0 -left-24"></div>
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Header Section -->
+<div class="mb-stack-lg space-y-stack-sm">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest block">Minha Jornada</span>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-text-main max-w-2xl">
+                    Sobre Mim
+                </h1>
+<p class="font-body-lg text-body-lg text-text-muted max-w-xl">
+                    Apaixonado por transformar lógica complexa em experiências digitais elegantes e intuitivas.
+                </p>
+</div>
+<!-- Split Layout Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Image & Details Card -->
+<div class="lg:col-span-5 space-y-gutter">
+<div class="glass-panel p-stack-sm rounded-xl overflow-hidden group">
+<div class="aspect-[4/5] relative rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional portrait of a software engineer in a modern, moody workspace with soft purple neon lighting accents. The individual has a confident look, wearing smart-casual tech attire. The background features blurred monitors with lines of code, conveying a high-end engineering environment. Deep shadows and sand-toned highlights create a sophisticated editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATzM_puBXkyldbbptVKt09rnBm1Y8ISqN1_5kHzdRVoOlS9jbmkidLgwXKKncWoE9Lnh4h8zSTYjqEOw2qsZDhrRlyi465Y5YUlRIhvXpiFqKqaLW8DxdP3i8BzXXnJi3_G1acKyyDe6qatv4slIbfCLbHPCPXFeUcGtbuYkz6Jj7_Q-gxmM8yxh4IuRgl_E6YUgnfvqqpvn8WBZom55EK_3uNLSdZc6IuMR_ib8KRNqpRVzWmsaGpUbQFqYm0etOJyrWwBQurIcVe"/>
+</div>
+</div>
+<div class="glass-panel p-stack-md rounded-xl space-y-stack-md">
+<h3 class="font-headline-md text-headline-md text-text-main border-b border-border-subtle pb-stack-sm">Detalhes</h3>
+<div class="grid grid-cols-2 gap-stack-md">
+<div>
+<span class="font-label-sm text-label-sm text-text-muted block">Localização</span>
+<span class="font-body-md text-body-md text-text-main">São Paulo, Brasil</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted block">Cargo</span>
+<span class="font-body-md text-body-md text-text-main">Lead Software Engineer</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted block">Educação</span>
+<span class="font-body-md text-body-md text-text-main">B.S. Computer Science</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted block">Idiomas</span>
+<span class="font-body-md text-body-md text-text-main">PT, EN, ES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Narrative & Technical Skills -->
+<div class="lg:col-span-7 space-y-gutter">
+<!-- Bio Narrative -->
+<div class="glass-panel p-stack-lg rounded-xl">
+<div class="prose prose-invert max-w-none space-y-stack-md">
+<p class="font-body-lg text-body-lg leading-relaxed text-text-main/90">
+                                Há mais de uma década, venho explorando as fronteiras do desenvolvimento de software, buscando não apenas escrever código que funcione, mas criar sistemas que perdurem. Minha abordagem combina o rigor técnico da engenharia com a sensibilidade do design moderno.
+                            </p>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+                                Especialista em arquiteturas escaláveis e interfaces de alta performance, dedico meu tempo a decifrar desafios de infraestrutura e aprimorar a jornada do usuário final. Acredito que a tecnologia deve ser invisível, permitindo que a funcionalidade e o valor de negócio brilhem de forma absoluta.
+                            </p>
+<div class="pt-stack-md border-t border-border-subtle flex flex-wrap gap-stack-md">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<span class="font-label-md text-label-md">10+ Anos de Código</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-md text-label-md">Focado em Performance</span>
+</div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="font-label-md text-label-md">Arquitetura de Sistemas</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tech Stack Bento -->
+<div class="space-y-stack-md">
+<h3 class="font-headline-md text-headline-md text-text-main px-2">Expertise Técnica</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<!-- Frontend Card -->
+<div class="glass-panel p-stack-md rounded-xl hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-stack-md">
+<span class="material-symbols-outlined text-primary">web</span>
+<h4 class="font-label-md text-label-md font-bold uppercase tracking-wide">Frontend</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">React</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Next.js</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">TypeScript</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Tailwind CSS</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Framer Motion</span>
+</div>
+</div>
+<!-- Backend Card -->
+<div class="glass-panel p-stack-md rounded-xl hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-stack-md">
+<span class="material-symbols-outlined text-primary">storage</span>
+<h4 class="font-label-md text-label-md font-bold uppercase tracking-wide">Backend</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Node.js</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Go</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">PostgreSQL</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Redis</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">gRPC</span>
+</div>
+</div>
+<!-- Tools & DevOps -->
+<div class="glass-panel p-stack-md rounded-xl md:col-span-2 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-stack-md">
+<span class="material-symbols-outlined text-primary">settings_ethernet</span>
+<h4 class="font-label-md text-label-md font-bold uppercase tracking-wide">Tools &amp; DevOps</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Docker</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Kubernetes</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">AWS</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Terraform</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Git &amp; GitHub Actions</span>
+<span class="skill-badge px-3 py-1 rounded-full font-label-sm text-label-sm text-primary">Vercel</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Philosophy Section with Animation -->
+<div class="mt-stack-lg relative py-20 px-gutter glass-panel rounded-2xl overflow-hidden text-center">
+
+<div class="relative z-10 max-w-3xl mx-auto space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-text-main">Engenharia como Forma de Arte</h2>
+<p class="font-body-lg text-body-lg text-text-muted">
+                        "O bom código não é apenas aquele que o computador entende, mas aquele que outros seres humanos podem ler com prazer."
+                    </p>
+<div class="flex justify-center gap-gutter pt-stack-sm">
+<button class="bg-primary-container text-on-primary-container px-stack-lg py-stack-sm rounded-lg font-label-md text-label-md active:scale-95 transition-transform hover:opacity-90">
+                            Ver Projetos
+                        </button>
+<button class="border border-border-subtle text-text-main px-stack-lg py-stack-sm rounded-lg font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                            Entrar em Contato
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-stack-lg border-t border-border-subtle bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="text-headline-sm font-headline-sm font-bold text-text-main">
+                DevCraft
+            </div>
+<p class="font-body-md text-body-md text-text-muted">
+                © 2024 DevCraft. Engineered with precision.
+            </p>
+<div class="flex items-center gap-stack-md">
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="font-body-md text-body-md text-text-muted hover:text-primary transition-colors" href="#">Resume</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and subtle glow tracking
+        document.addEventListener('mousemove', (e) => {
+            const panels = document.querySelectorAll('.glass-panel');
+            panels.forEach(panel => {
+                const rect = panel.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                panel.style.setProperty('--mouse-x', `${x}px`);
+                panel.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
